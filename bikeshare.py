@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITIES_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -29,7 +29,7 @@ def get_filters():
             select = input('Enter the City name: ').lower().strip()
         except:
             print("This is not a valid city name please re-enter (chicago, new york city and washington)")
-        if select in CITY_DATA.keys():
+        if select in CITIES_DATA.keys():
             city = select
             break
         else:
@@ -95,7 +95,7 @@ def load_data(city, month, day):
         df   - Pandas DataFrame containing city data filtered by month an   """
 
     # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITIES_DATA[city])
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
