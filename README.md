@@ -7,13 +7,13 @@
 Bikeshare data analysis
 
 ### Description
-this project helps you find statistics about bike sharing in multiple cities like (new york, washington, etc..) 
+this project helps you find statistics about bike sharing in multiple cities like (new york, washington, etc..) by giving you some statictiscs and calculations.
 
 ### Files used
 chicago.csv, new_york_city.csv and washington.csv
 
 ### Credits
 my tautors "https://classroom.udacity.com/nanodegrees"
-AAL
-
+AAL "African App Launchpad"
+Stackoverflow "https://stackoverflow.com/"
 
