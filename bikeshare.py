@@ -22,7 +22,7 @@ def get_filters():
     month = ''
     day = ''
     print('Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city or washington). HINT: Use a while loop to handle invalid inputs
     print("Would you like to see data for Chicago, New York City, or Washington?")
     while(True):
         try:
@@ -96,6 +96,7 @@ def import_city_data(city, month, day):
 
     # load data file into a dataframe
     df = pd.read_csv(CITIES_DATA[city])
+
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
